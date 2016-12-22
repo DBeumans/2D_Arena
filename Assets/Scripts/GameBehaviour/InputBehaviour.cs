@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
-public class InputBehaviour : MonoBehaviour {
+public class InputBehaviour : NetworkBehaviour {
 
     Vector2 _moveInput;
     
