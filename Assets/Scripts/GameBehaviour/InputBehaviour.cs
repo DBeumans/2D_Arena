@@ -2,7 +2,7 @@
 using UnityEngine.Networking;
 using System.Collections;
 
-public class InputBehaviour : NetworkBehaviour {
+public class InputBehaviour : MonoBehaviour {
 
     Vector2 _moveInput;
     
@@ -13,7 +13,6 @@ public class InputBehaviour : NetworkBehaviour {
     void KeysCheck()
     {
 
-        _moveInput = new Vector2(Input.GetAxis("HorizontalJoystick"),0);
-        Debug.Log(_moveInput);
+        _moveInput = new Vector2(Input.GetAxis("Horizontal"),0);
     }
 }
